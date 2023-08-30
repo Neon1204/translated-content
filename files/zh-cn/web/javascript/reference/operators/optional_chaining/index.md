@@ -43,7 +43,7 @@ let nestedProp = obj.first?.second;
 
 ```js
 let temp = obj.first;
-let nestedProp = temp === null || temp === undefined ? undefined : temp.second;
+let nestedProp = temp === (null || temp === undefined ? undefined : temp.second);
 ```
 
 ### 可选链与函数调用
